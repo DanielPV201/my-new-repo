@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-dfEV = pd.read_csv(r'C:\Users\danie\my-new-repo\Electric_Vehicle_Population_Data.csv')
+dfEV = pd.read_csv(my-new-repo/Electric_Vehicle_Population_Data.csv')
 st.title(":green[E]lectric :green[V]ehicles in :blue[Washington]")
 
 st.write("This dataset contains information about Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) currently registered with the Washington State Department of Licensing (DOL). The data was obtained from Data.gov, an official website of the United States government")
