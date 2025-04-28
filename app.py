@@ -4,6 +4,7 @@ import streamlit as st
 
 dfEV = pd.read_csv('Electric_Vehicle_Population_Data.csv')
 dfEV = dfEV.drop(columns=['VIN (1-10)'])
+dfEV = dfEV.drop(columns=['County'])
 dfEV.columns = dfEV.columns.str.replace(' ', '_')
 st.title(":green[E]lectric :green[V]ehicles in :blue[Washington]")
 
