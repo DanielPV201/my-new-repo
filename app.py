@@ -1,8 +1,17 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import pyarrow as pa
+
 
 dfEV = pd.read_csv('Electric_Vehicle_Population_Data.csv')
+try:
+    table = pa.Table.from_pandas(dfEV)
+    print("PyArrow conversion successful!")
+except Exception as e:
+    print(f"PyArrow conversion failed: {e}")
+print(dfEV.dtypes)
+
 dfEV = dfEV.drop(columns=['VIN (1-10)'])
 dfEV = dfEV.drop(columns=['City'])
 dfEV = dfEV.drop(columns=['County'])
