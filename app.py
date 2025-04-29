@@ -97,7 +97,7 @@ fig = px.scatter(
     scatter_df,
     x='Base_MSRP',
     y='Electric_Range',
-    color='Electric Vehicle Type',
+    color='Electric_Vehicle_Type',
     hover_data=['Make', 'Model', 'Model_Year'],
     title='Electric Range vs Base Price (Cleaned Data)',
     labels={'Base_MSRP': 'Base Price ($)', 'Electric_Range': 'Range (miles)'},
